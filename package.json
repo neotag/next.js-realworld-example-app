@@ -1,0 +1,8 @@
+{
+  "name": "next.js-realworld-example-app",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:neotag/next.js-realworld-example-app.git",
+  "author": "neotag <harada@gaji.jp>",
+  "license": "MIT"
+}

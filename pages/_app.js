@@ -16,7 +16,7 @@ class MyApp extends App {
   }
 
   login() {
-    const token = root.localStorage.getItem('jwt');
+    const token = root.localStorage.getItem("jwt");
     if (token) {
       agent.setToken(token);
     }
@@ -30,6 +30,7 @@ class MyApp extends App {
 
   render() {
     const { Component, pageProps } = this.props;
+    if (global.window) window.store = store;
 
     return (
       <Provider store={store}>

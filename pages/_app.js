@@ -1,5 +1,7 @@
 import React from "react";
 import App from "next/app";
+import { Provider } from "react-redux";
+import { store } from "../store";
 import agent from "../utils/agent";
 
 class MyApp extends App {
@@ -29,7 +31,11 @@ class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
 
-    return <Component {...pageProps} />;
+    return (
+      <Provider store={store}>
+        <Component {...pageProps} />
+      </Provider>
+    );
   }
 }
 

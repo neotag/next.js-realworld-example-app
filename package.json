@@ -11,9 +11,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "@types/next-redux-wrapper": "^2.0.2",
+    "@types/react-redux": "^7.1.2",
+    "@types/redux": "^3.6.0",
     "next": "^9.0.1",
+    "next-redux-wrapper": "^3.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4",
     "superagent": "^5.1.0",
     "superagent-promise": "^1.1.0"
   },

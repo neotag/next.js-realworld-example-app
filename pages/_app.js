@@ -1,6 +1,6 @@
-import React from 'react';
-import App, { Container } from 'next/app';
-import agent from '../utils/agent';
+import React from "react";
+import App from "next/app";
+import agent from "../utils/agent";
 
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
@@ -29,11 +29,7 @@ class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
 
-    return (
-      <Container>
-        <Component {...pageProps} />
-      </Container>
-    );
+    return <Component {...pageProps} />;
   }
 }
 
